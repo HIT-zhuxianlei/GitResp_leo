@@ -1,9 +1,12 @@
-git add file_name #将文件从工作区放到暂存区
-git commit -m "注释"  #把暂存区的文件提交到本地库并使用-m添加注释
+git add file_name	#将文件从工作区放到暂存区
+git commit -m "注释" 	#把暂存区的文件提交到本地库并使用-m添加注释
 git status	#查询文件状态
 git log	#查看修改日志 log较多时 按空格下一页 按B上一页 按Q退出
 git log --pretty=oneline	#简洁log
 git log --oneline	#更简洁
 git reflog	#多了HEAD@{指针回到当前版本所需步数}
 
-git reset --hard index	#跳到index对应的状态 log查看index
+git reset --hard [index]	#跳到index对应的状态 工作区和暂存区会跟随本地库更改 log查看index
+git reset --mixed [index]	#重置暂存区，工作区不动	（不常用）
+git reset --soft [index]	#暂存区和工作区不动	（不常用）
+
