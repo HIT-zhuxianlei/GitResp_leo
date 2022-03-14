@@ -15,4 +15,6 @@ rm [file_name]	#删除工作区的文件
 git add [file_name]		#将空从工作区放到暂存区：即更新删除命令
 git commit -m "注释"  [file_name]	#将删除更新到本地库
 
+git diff [file_name]		#git以行为单位比对工作区和暂存区的数据区别
+
 
