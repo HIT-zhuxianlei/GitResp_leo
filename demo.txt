@@ -1,5 +1,5 @@
-git add file_name	#将文件从工作区放到暂存区
-git commit -m "注释" 	#把暂存区的文件提交到本地库并使用-m添加注释
+git add [file_name]	#将文件从工作区放到暂存区
+git commit -m "注释"  [file_name]	#把暂存区的文件提交到本地库并使用-m添加注释
 git status	#查询文件状态
 git log	#查看修改日志 log较多时 按空格下一页 按B上一页 按Q退出
 git log --pretty=oneline	#简洁log
