@@ -1,0 +1,3 @@
+git add file_name #将文件从工作区放到暂存区
+git commit -m "注释"  #把暂存区的文件提交到本地库并使用-m添加注释
+git status	#查询文件状态
