@@ -1,4 +1,5 @@
-git init 	#...
+git init	#初始化
+
 git add [file_name]		#将文件从工作区放到暂存区
 git commit -m "注释"  [file_name]	#把暂存区的文件提交到本地库并使用-m添加注释
 git status	#查询文件状态
@@ -19,17 +20,16 @@ git commit -m "注释"  [file_name]	#将删除更新到本地库
 git diff [file_name]		#git以行为单位比对工作区和暂存区的数据区别 不加fn则全部比较
 git diff [HEAD/index] [file_name]		#和当前（HEAD）或历史版本（对应index）比较暂存区和本地库的数据
 
-git branch -v	#查看所有分支	*代表当前所在分支
-git branch [branch_name]	#创建分支
-git checkout [branch_name]	#切换分支
-git merge [branch_name]	 	#把目标分支合并到当前所在分支
-#若有冲突conflict则自行 删改 然后add commit(此时不带文件名否则报错)
-
-
-
-
 git remote add [name] [https://...]	#给远程库起别名
+git remote -v	#查看别名
 git push <远程主机名> <本地分支名>:<远程分支名>		#将本地库push到远程库 ，如果本地分支名与远程分支名相同，则可以省略冒号：
 
+git clone [https://...]	#从远程库clone克隆到本地 1.初始化本地库 2.完整地克隆 3.自动起别名
 
+#windows 凭据缓存了GitHub的账号密码 若换账号可手动删除
+
+#$ git fetch origin （+pu:pu maint:tmp）
+此更新(或根据需要创建)通过从远程存储库的分支(分别)pu和maint提取来分支本地存储库中的pu和tmp。
+即使没有快进，pu分支将被更新，因为它的前缀是加号; tmp不会。//原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：https://www.yiibai.com/git/git_fetch.html
+fetch仅将远程库内容下载到本地，但并未更新工作区
 
